@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Python | Codewithshasha</title>
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+  overflow: scroll;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.his{
+  padding-top: 40px;
+  padding-left: 37px-;
+}
+p{
+  padding-top: 30px;
+  padding-left: 37px;
+}
+li{
+  color:darkblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list{
+  padding-left: 37px;
+  padding-top: 20px;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 50px;
+}
+.sha{
+  padding-top: 93px;
+  padding-left: 37px;
+}
+
+</style>
+<body>
+    <nav>
+        <label class="logo">Codewithshasha</label>
+        <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+           <li>
+              <a href="#">Courses
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+               <li><a href="Html.html">Html</a></li>
+               <li><a href="Css.html">Css</a></li>
+               <li><a href="JavaScript.html">Javascript</a></li>
+                 <li><a href="Python.html">Python</a></li>
+                 
+                 
+              </ul>
+           </li>
+           <li>
+              <a href="#">Web Design
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="Front End.html">Front End</a></li>
+                 <li><a href="Back End.html">Back End</a></li>
+                 <li>
+                   
+                 </li>
+              </ul>
+           </li>
+           <li><a href="Contact.html">Contact</a></li>
+           <li><a href="SIGN UP.html">Login</a></li>
+        </ul>
+     </nav>
+     <h1 class="sha">Python Tutorial</h1>
+<div class="center-aligned tutorial-menu">
+
+</div>
+<p><b>Python</b> is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This <b>tutorial</b> gives enough understanding on <b>Python programming</b> language.</p>
+<h2 class="sha">Why to Learn Python?</h2>
+<p><b>Python</b> is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+<p><b>Python</b> is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:</p>
+<ul class="list">
+<li><p><b>Python is Interpreted</b> &minus; Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</p></li>
+<li><p><b>Python is Interactive</b> &minus; You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</p></li>
+<li><p><b>Python is Object-Oriented</b> &minus; Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</p></li>
+<li><p><b>Python is a Beginner's Language</b> &minus; Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</p></li>
+</ul>
+<h2 class="sha">Characteristics of Python</h2>
+<p>Following are important characteristics of <b>Python Programming</b> &minus;</p>
+<ul class="list">
+<li><p>It supports functional and structured programming methods as well as OOP.</p></li>
+<li><p>It can be used as a scripting language or can be compiled to byte-code for building large applications.</p></li>
+<li><p>It provides very high-level dynamic data types and supports dynamic type checking.</p></li>
+<li><p>It supports automatic garbage collection.</p></li>
+<li><p>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</p></li>
+</ul>
+<h2 class="sha">Hello World using Python.</h2>
+<p>Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program, You can try it using Demo link.</p>
+
+<div class="sha">
+  <pre class="prettyprint notranslate">
+    <u> ("Hello, Python!");</u>
+    </pre>
+</div>
+<h2 class="sha">Applications of Python</h2>
+<p>As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:</p>
+<ul class="list">
+<li><p><b>Easy-to-learn</b> &minus; Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</p></li>
+<li><p><b>Easy-to-read</b> &minus; Python code is more clearly defined and visible to the eyes.</p></li>
+<li><p><b>Easy-to-maintain</b> &minus; Python's source code is fairly easy-to-maintain.</p></li>
+<li><p><b>A broad standard library</b> &minus; Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.</p></li>
+<li><p><b>Interactive Mode</b> &minus; Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.</p></li>
+<li><p><b>Portable</b> &minus; Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</p></li>
+<li><p><b>Extendable</b> &minus; You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.</p></li>
+<li><p><b>Databases</b> &minus; Python provides interfaces to all major commercial databases.</p></li>
+<li><p><b>GUI Programming</b> &minus; Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.</p></li>
+<li><p><b>Scalable</b> &minus; Python provides a better structure and support for large programs than shell scripting.</p></li>
+</ul>
+</body>
+</html>

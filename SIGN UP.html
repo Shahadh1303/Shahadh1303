@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+ 
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Login</title>
+ <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js">
+ 
+ 
+$('.loginBtn').click(function(){
+  $('.login').show();
+  $('.signUp').hide();
+
+  $('.loginBtn').css({'border-bottom' : '2px solid #ff4141'});
+ 
+  $('.signUpBtn').css({'border-style' : 'none'});
+});
+ 
+ 
+
+ 
+$('.signUpBtn').click(function(){
+  $('.login').hide();
+  $('.signUp').show();
+
+  $('.signUpBtn').css({'border-bottom' : '2px solid #ff4141'});
+ 
+   $('.loginBtn').css({'border-style' : 'none'});
+});
+ </script>
+  <style>
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://images.theconversation.com/files/226930/original/file-20180710-70051-1f2m89k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center !important;
+  height: 100vh;
+}
+.form{
+  width: 350px;
+  height: 450px;
+  background-color: rgba(41, 39, 39, 0.3);
+  box-shadow: 0 5px 30px black;
+}
+.btn button {
+  padding: 3px;
+  margin: 30px 0px 40px 30px;
+  border-style: none;
+  background-color: transparent;
+  color: beige;
+  font-size: 18px;
+  font-weight: 550;
+}
+.formGroup{
+  display: flex;
+  justify-content: center;
+}
+.formGroup input{
+  border: none;
+  width: 80%;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+input:focus {
+  outline: none !important;
+  border-bottom: 2px solid rgb(91, 243, 131);
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.checkBox{
+  display: flex;
+  justify-content: center;
+  margin: 16px!important;
+}
+ 
+#checkbox{
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+.text{
+  color: rgb(199, 197, 197);
+  font-size: 13px;
+}
+.btn2{
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(10, 136, 43);
+  border-style: none;
+  color: white;
+  font-weight: 600;
+}
+.btn2:hover{
+  background-color: rgba(10, 136, 43, 0.5);
+}
+.btn button:hover{
+  border-bottom: 2px solid rgb(91, 243, 131);
+}
+ 
+/* hide signup form */
+.login{
+  display: none;
+}
+ 
+/* Login form code */
+.login{
+  margin-top: 40px;
+}
+.login .checkBox{
+  margin-top: 30px !important;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:antiquewhite;
+}
+
+li {
+  float: left;
+}
+.active{
+   border-radius:32px ;
+}
+
+li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ a{
+  color:white;
+}
+.signUpBtn{
+  color: aliceblue;
+  
+}
+
+
+
+  </style>
+</head>
+ 
+<body>
+  <nav>
+    <label class="logo"><a href="index.html">Codewithshasha</a></label>
+    <ul>
+      
+ </nav>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        <button class="signUpBtn"><a href="SIGN UP.html">SING UP</a></button>
+        <button class="loginBtn"><a href="Login.html">LOG IN</a></button>
+      </div>
+      <form class="signUp" action="" method="get">
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form>
+        
+      <!------ Login Form -------- -->
+      <form class="login" action="" method="get">
+        
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+         
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me signed in on this device</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form>
+ 
+    </div>
+  </div>
+ 
+  <script src="jQuery.js"></script>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Css | Codewithshasha</title>
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+  overflow :scroll;
+  padding-bottom: 100px;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.his{
+  padding-top: 40px;
+  padding-left: 37px-;
+}
+p{
+  padding-top: 30px;
+  padding-left: 37px;
+}
+li{
+  color:darkblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list{
+  padding-left: 37px;
+  padding-top: 20px;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 50px;
+}
+.sha{
+  padding-top: 93px;
+  padding-left: 37px;
+}
+</style>
+<body>
+    <nav>
+        <label class="logo">Codewithshasha</label>
+        <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+           <li>
+              <a href="#">Courses
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+               <li><a href="Html.html">HTML</a></li>
+               <li><a href="Css.html">Css</a></li>
+               <li><a href="JavaScript.html">Javascript</a></li>
+                 <li><a href="Python.html">Python</a></li>
+              
+                 
+              </ul>
+           </li>
+           <li>
+              <a href="#">Web Design
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="#">Front End</a></li>
+                 <li><a href="#">Back End</a></li>
+                 <li>
+                   
+                 </li>
+              </ul>
+           </li>
+           <li><a href="Contact.html">Contact</a></li>
+           <li><a href="SIGN UP.html">Login</a></li>
+        </ul>
+     </nav>
+     <h1 class="sha">CSS Tutorial</h1>
+<div class="center-aligned tutorial-menu">
+
+</div>
+<p><b>CSS</b> is used to control the style of a web document in a simple and easy way.</p>
+<p><b>CSS</b> is the acronym for <b>"Cascading Style Sheet"</b>. This tutorial covers both the versions CSS1,CSS2 and CSS3, and gives a complete understanding of CSS, starting from its basics to advanced concepts.</p>
+<h2 class="sha">Why to Learn CSS?</h2>
+<p><b>Cascading Style Sheets</b>, fondly referred to as <b>CSS</b>, is a simple design language intended to simplify the process of making web pages presentable.</p>
+<p><b>CSS</b> is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning CSS:</p>
+<ul class="list">
+<li><p><b>Create Stunning Web site</b> - CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</p></li>
+<li><p><b>Become a web designer</b> - If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.</p></li>
+<li><p><b>Control web</b> - CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p></li>
+<li><p><b>Learn other languages</b> - Once you understands the basic of HTML and CSS then other related technologies like javascript, php, or angular are become easier to understand.</p></li>
+</ul>
+<h2 class="sha">Hello World using CSS.</h2>
+<p>Just to give you a little excitement about CSS, I'm going to give you a small conventional CSS Hello World program, You can try it using Demo link.</p>
+
+<div class="sha">
+  <pre class="prettyprint notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;title&gt;This is document title&lt;/title&gt;
+          &lt;style&gt;
+          h1 {
+             color: #36CFFF; 
+          }
+          &lt;/style&gt;
+       &lt;/head&gt;	
+       &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+       &lt;/body&gt;	
+    &lt;/html&gt;
+    </pre>
+</div>
+<h2 class="sha"> Applications of CSS</h2>
+<p>As mentioned before, CSS is one of the most widely used style language over the web. I'm going to list few of them here:</p>
+<ul class="list">
+<li><p><b>CSS saves time</b> - You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</p></li>
+<li><p><b>Pages load faster</b> - If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</p></li>
+<li><p><b>Easy maintenance</b> - To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</p></li>
+<li><p><b>Superior styles to HTML</b> - CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</p></li>
+<li><p><b>Multiple Device Compatibility</b> - Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.</p></li>
+<li><p><b>Global web standards </b>- Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</p></li>
+</ul>
+<h2 class="sha">Audience</h2>
+<p>This <b>CSS tutorial</b> will help both students as well as professionals who want to make their websites or personal blogs more attractive.</p>
+<h2 class="sha">Prerequisites</h2>
+<p>You should be familiar with:</p>
+<ul class="list">
+<li>Basic word processing using any text editor.</li>
+<li>How to create directories and files.</li>
+<li>How to navigate through different directories.</li>
+<li>Internet browsing using popular browsers like Internet Explorer or Firefox.</li>
+<li>Developing simple Web Pages using HTML or XHTML.</li>
+</ul>
+<p>If you are new to HTML and XHTML, then we would suggest you to go through our <a href="Html.html">HTML</a> Tutorial or XHTML Tutorial first.</p>
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <p><b>C</b>ascading <b>S</b>tyle <b>S</b>heets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+<p>CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</p>
+<p>CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML  document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p>
+<h2 class="sha">Advantages of CSS</h2>
+<ul class="list">
+<li><p><b>CSS saves time</b> &minus; You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</p></li>
+<li><p><b>Pages load faster</b> &minus; If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</p></li>
+<li><p><b>Easy maintenance</b> &minus; To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</p></li>
+<li><p><b>Superior styles to HTML</b> &minus; CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</p></li>
+<li><p><b>Multiple Device Compatibility</b> &minus; Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.</p></li>
+<li><p><b>Global web standards</b> &minus; Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</p></li>
+<!--<li><p><b>Offline Browsing</b> &minus; CSS can store web applications locally with the help of an offline cache.Using of this, we can view offline websites.The cache also ensures faster loading and better overall performance of the website. </p></li>
+<li><p><b>Platform Independence</b> &minus; The Script offer consistent platform independence and can support latest browsers as well. </p></li>-->
+</ul>
+<h2 class="sha">Who Creates and Maintains CSS?</h2>
+<p>CSS is created and maintained through a group of people within the W3C called the CSS Working Group. The CSS Working Group creates documents called specifications. When a specification has been discussed and officially ratified by the W3C members, it becomes a recommendation.</p>
+<p>These ratified specifications are called recommendations because the W3C has no control over the actual implementation of the language. Independent companies and organizations create that software.</p>
+<p><b>NOTE</b> &minus; The World Wide Web Consortium, or W3C is a group that makes recommendations about how the Internet works and how it should evolve.</p>
+<h2 class="sha">CSS Versions</h2>
+<p>Cascading Style Sheets level 1 (CSS1) came out of W3C as a recommendation in December 1996. This version describes the CSS language as well as a simple visual formatting model for all the HTML tags.</p>
+<p>CSS2 became a W3C recommendation in May 1998 and builds on CSS1. This version adds support for media-specific style sheets e.g. printers and aural devices, downloadable fonts, element positioning and tables.</p>
+<!--<p>CSS3 was became a W3C recommendation in June 1999 and builds on older versions CSS. it has divided into documentations is called as Modules and here each module having new extension features defined in CSS2.</p>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
