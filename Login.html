@@ -5,191 +5,202 @@
       <meta charset="utf-8">
       <title>Login | Codewithshasha</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+.bg-img{
+  background: url('WhatsApp Image 2022-07-09 at 7.46.04 AM.jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   
 }
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: #2691d9;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 19px;
+  color:black;
+  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.signup a{
+  color:azure
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
 nav{
-  padding-top: 0;
   height: 70px;
   background: #063247;
   box-shadow: 0 3px 15px rgba(0,0,0,.4);
 }
 a{
-  color:white;
+  color: white;
 }
-html,body{
-  display: grid;
-  height: 100%;
-  width: 100%;
-  
-  background: #f2f2f2;
-  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
-}
-::selection{
-  background: #4158d0;
-  color: #fff;
-}
-.wrapper{
-  align= center
-  width: 380px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
-}
-.wrapper .title{
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
-  user-select: none;
-  border-radius: 15px 15px 0 0;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
-}
-.wrapper form{
-  padding: 10px 30px 50px 30px;
-}
-.wrapper form .field{
-  height: 50px;
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-}
-.wrapper form .field input{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  font-size: 17px;
-  padding-left: 20px;
-  border: 1px solid lightgrey;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-}
-.wrapper form .field input:focus,
-form .field input:valid{
-  border-color: #4158d0;
-}
-.wrapper form .field label{
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  color: #999999;
-  font-weight: 400;
-  font-size: 17px;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
-}
-form .field input:focus ~ label,
-form .field input:valid ~ label{
-  top: 0%;
-  font-size: 16px;
-  color: #4158d0;
-  background: #fff;
-  transform: translateY(-50%);
-}
-form .content{
-  display: flex;
-  width: 100%;
-  height: 50px;
-  font-size: 16px;
-  align-items: center;
-  justify-content: space-around;
-}
-form .content .checkbox{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-form .content input{
-  width: 15px;
-  height: 15px;
-  background: red;
-}
-form .content label{
-  color: #262626;
-  user-select: none;
-  padding-left: 5px;
-}
-form .content .pass-link{
-  color: "";
-}
-form .field input[type="submit"]{
-  color: #fff;
-  border: none;
-  padding-left: 0;
-  margin-top: -10px;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
-  transition: all 0.3s ease;
-}
-form .field input[type="submit"]:active{
-  transform: scale(0.95);
-}
-form .signup-link{
-  color: #262626;
-  margin-top: 20px;
-  text-align: center;
-}
-form .pass-link a,
-form .signup-link a{
-  color: #4158d0;
-  text-decoration: none;
-}
-form .pass-link a:hover,
-form .signup-link a:hover{
-  text-decoration: underline;
-}
-
 
    </style>
    <body>
     <nav>
       <label class="logo"><a href="index.html">Codewithshasha</a></label>
-      <ul>
-        
-   </nav>
-    
-      <center>
-        <div class="wrapper">
-          <div class="title">
-             Login Form
-          </div>
-          <form action="#">
-             <div class="field">
-                <input type="text" required>
-                <label>Email Address</label>
-             </div>
-             <div class="field">
-                <input type="password" required>
-                <label>Password</label>
-             </div>
-             <div class="content">
-                <div class="checkbox">
-                   <input type="checkbox" id="remember-me">
-                   <label for="remember-me">Remember me</label>
-                </div>
-                <div class="pass-link">
-                   <a href="#">Forgot password?</a>
-                </div>
-             </div>
-             <div class="field">
-                <input type="submit" value="Login">
-             </div>
-             <div class="signup-link">
-                Not a member? <a href="SIGN UP.html">Signup now</a>
-             </div>
-          </form>
-       </div>
-      </center>
+      </nav>
+      <div class="bg-img">
+         <div class="content">
+            <header>Login Form</header>
+            <form action="#">
+               <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" required placeholder="Email or Phone">
+               </div>
+               <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" class="pass-key" required placeholder="Password">
+                  <span class="show">SHOW</span>
+               </div>
+               <div class="pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="field">
+                  <input type="submit" value="LOGIN">
+               </div>
+            </form>
+           <br>
+           <br>
+            <div class="signup">
+               Don't have account?
+               <a href="SIGN UP.html">Signup Now</a>
+            </div>
+         </div>
+      </div>
+      <script>
+         const pass_field = document.querySelector('.pass-key');
+         const showBtn = document.querySelector('.show');
+         showBtn.addEventListener('click', function(){
+          if(pass_field.type === "password"){
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+          }else{
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+          }
+         });
+      </script>
    </body>
 </html>
