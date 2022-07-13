@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -7,9 +8,6 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
-    <script>
-      alert("There is error in sending message")
-   </script>
    <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
 *{
@@ -20,19 +18,14 @@
 overflow-x: hidden; // hide horizontal
   user-select: none;
 }
-.bg-img{
-  background: url("https://i.pinimg.com/564x/68/29/21/6829210bc0ca5bd68c21c31903ab4b3e.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 10000px;
-   
+
+
+}
 .bg-img:after{
+  
   position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+ 
+
   
 }
 .content{
@@ -167,7 +160,7 @@ a{
       <div class="bg-img">
          <div class="content">
             <header>Login Form</header>
-            <form action="connect.php" method="get">
+            <form action="#">
                <div class="field">
                   <span class="fa fa-user"></span>
                   <input type="text" required placeholder="Email or Phone">
