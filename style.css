@@ -158,3 +158,22 @@ body{
 .buttons a{
   color: #FCBA7F;
 }
+#countdown-container {
+  display: inline-block; 
+  width: 300px; 
+  margin: 20px 0; 
+  border-radius: 5px; 
+  background: #1d81af; 
+}
+#countdown {
+  font-family: "Fira Sans", sans-serif;
+  display: inline-block; 
+  padding: 30px; 
+  background: #1d81af;
+  color: white; 
+}
+
+#countdown span {
+  font-weight: bold; 
+  font-size: 30px; 
+}
