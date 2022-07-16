@@ -15,6 +15,62 @@
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1797774831160115"
      crossorigin="anonymous"></script>
    </head>
+   <script>
+            let days = 14;
+let hours = 0;
+let minutes = 2;
+let seconds = 5; 
+
+let totalSeconds =
+days * 60 * 60 * 24 + hours * 60 * 60 + minutes * 60 + seconds;
+
+
+let tempSeconds = totalSeconds;
+
+
+const convert = (value, inSeconds) => {
+if (value > inSeconds) {
+    let x = value % inSeconds;
+    tempSeconds = x;
+    return (value - x) / inSeconds;
+} else {
+    return 0;
+}
+};
+
+
+const setSeconds = (s) => {
+document.querySelector("#seconds").textContent = s + "s";
+};
+
+
+const setMinutes = (m) => {
+document.querySelector("#minutes").textContent = m + "m";
+};
+
+
+const setHours = (h) => {
+document.querySelector("#hours").textContent = h + "h";
+};
+
+const setDays = (d) => {
+document.querySelector("#days").textContent = d + "d";
+};
+
+
+var x = setInterval(() => {
+
+if (totalSeconds <= 0) {
+    clearInterval(x);
+}
+setDays(convert(tempSeconds, 24 * 60 * 60));
+setHours(convert(tempSeconds, 60 * 60));
+setMinutes(convert(tempSeconds, 60));
+setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
+totalSeconds--;
+tempSeconds = totalSeconds;
+}, 1000);
+   </script>
    <style>
       body{
     background-image:wp9109485-programmer-4k-wallpapers.jpg;
@@ -100,6 +156,14 @@
          </ul>
       </nav>
       <section></section>
+       <center>
+         <div id="countdown-container">
+             <div id="countdown">
+                 <span id="days">0d</span> : <span id="hours">0h</span> :
+                 <span id="minutes">0m</span> : <span id="seconds">0s</span>
+             </div>
+         </div>
+     </center>
        
    </body>
 </html>
